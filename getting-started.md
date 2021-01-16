@@ -43,6 +43,7 @@ sudo mount -t drvfs C: /mnt/c -o metadata
 ```
 
 ### Done!
+
 [Return to the preparation steps](#prep)
 ---
 
@@ -70,6 +71,7 @@ eval `ssh-agent -s`
 ssh-add ~/.ssh/id_rsa
 ```
 ### Done!
+
 [Return to the preparation steps](#prep)
 
 ---
@@ -82,6 +84,7 @@ git config --global user.email <your email>
 ```
 
 ### Done!
+
 [Return to the preparation steps](#prep)
 ---
 
@@ -108,5 +111,6 @@ Enter the directoty with:
 cd <name>
 ```
 ### Done!
+
 [Return to the preparation steps](#prep)
 
