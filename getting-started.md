@@ -45,6 +45,7 @@ sudo mount -t drvfs C: /mnt/c -o metadata
 ### Done!
 
 [Return to the preparation steps](#prep)
+
 ---
 
 ## Link Github in Linux <a name="ssh"></a>
@@ -86,6 +87,7 @@ git config --global user.email <your email>
 ### Done!
 
 [Return to the preparation steps](#prep)
+
 ---
 
 ## Cloning the repository <a name="repo"></a>
