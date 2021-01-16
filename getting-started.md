@@ -6,7 +6,10 @@ To follow this course you will need to take some steps first:
 2. Make sure you are using Linux [here](#linux)
 3. Link your github accont to your Linux [here](#ssh)
 4. Create a repository in your github
-5. Clone the repository to your terminal [here](#repo)
+5. Config github in your terminal [here](#config)
+6. Clone the repository to your terminal [here](#repo)
+
+---
 
 ## Linux 
 
@@ -41,6 +44,8 @@ sudo mount -t drvfs C: /mnt/c -o metadata
 ### Done!
 Now everytime I say *terminal*, you know that I am talking about your WLS!  
 
+---
+
 ## Link Github in Linux <a name="ssh"></a>
 We'll be doing a [SSH](https://en.wikipedia.org/wiki/SSH_(Secure_Shell)) link from your computer to your github, so you can control your repositories in a mor efficient way.
 
@@ -64,16 +69,38 @@ cat ~/.ssh/id_rsa.pub
 eval `ssh-agent -s`
 ssh-add ~/.ssh/id_rsa
 ```
-- Done!
+### Done!
+
+---
+
+## Configuring Github <a name="config"></a>
+In your terminal do:
+```shell
+git config --global user.name "<your name>"
+git config --global user.email <your email>
+```
+---
 
 ## Cloning the repository <a name="repo"></a>
 If you are not used to linux commands, don't panic, here is a [link](https://www.hostinger.com/tutorials/linux-commands) that will help you. You don't need to memorize all commands, use it to consult only.
 
-- Click the button `\/Code` in the repository's page.
-- Chose the ssh option and copy it.
-- Create the directory you want to be yout project's directory, I always create a `projects` dir. ****If you are using WLS remmember to go to `/mnt/c` first*** 
+- Create the directory you want to be your project's, I always create a `projects` dir. ****If you are using WLS remember to go to `/mnt/c` first*** 
 ```shell
 mkdir projects
 cd projects
 ``` 
+- Click the button `\/Code` in the repository's page.
+- Chose the ssh option and copy it.
+- In Terminal do:
+```shell
+git clone <paste it>
+```
+- You should be able to see a directory with the name of your repository, verify it by doing:
+```shell
+ls -la
+```
+Enter the directoty with:
+```shell
+cd <name>
+```
 
