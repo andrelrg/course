@@ -1,10 +1,10 @@
 # First of all
 
-## Preparation
+## Preparation <a name="prep"></a>
 To follow this course you will need to take some steps first:
 1. Create your github account: https://github.com/
 2. Make sure you are using Linux [here](#linux)
-3. Link your github accont to your Linux [here](#ssh)
+3. Link your github account to your Linux [here](#ssh)
 4. Create a repository in your github
 5. Config github in your terminal [here](#config)
 6. Clone the repository to your terminal [here](#repo)
@@ -22,28 +22,28 @@ In my tutorials I'll be using Ubuntu, so if you are not using some unix based OS
  - In the windows bar type `features`
  - Check `Windows Subsystem for Linux` option
  - Make sure it worked executing `wsl` in the command promt
- - The install Ubuntu in the `Microsoft Store`
+ - Then install Ubuntu in the `Microsoft Store`
  - After doing this, the `wsl` command should show you our precious Terminal
+- Now everytime I say *terminal*, you know that I am talking about WLS!  
+
 
 ### Install Visual Studio Code
 - https://code.visualstudio.com/download
 
 ### Integrate with the WSL
-- To this you'll need this extension.
-- https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl
+- To do this you'll need this [extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
 - After installing this, restart you wls
 - You should now be able to open VSCode on widows via WLS with the command `code .` (go to the directory that you want first)
 
 ### Directories
-Inside the WLS you'll be able to see Widowns directories inside `/mnt/c`. Also, there is a problem with the file permissions integrations, so, to use git from wsl terminal you'll need to do this in the terminal:
+Inside the WLS you'll be able to see Widowns directories inside `/mnt/c`. Also, there is a problem with the file permissions integration, so, to use git from wsl terminal you'll need to do this in the terminal:
 ```shell 
 sudo umount /mnt/c
 sudo mount -t drvfs C: /mnt/c -o metadata
 ```
 
 ### Done!
-Now everytime I say *terminal*, you know that I am talking about your WLS!  
-
+[Return to the preparation steps](#prep)
 ---
 
 ## Link Github in Linux <a name="ssh"></a>
@@ -70,6 +70,7 @@ eval `ssh-agent -s`
 ssh-add ~/.ssh/id_rsa
 ```
 ### Done!
+[Return to the preparation steps](#prep)
 
 ---
 
@@ -79,6 +80,9 @@ In your terminal do:
 git config --global user.name "<your name>"
 git config --global user.email <your email>
 ```
+
+### Done!
+[Return to the preparation steps](#prep)
 ---
 
 ## Cloning the repository <a name="repo"></a>
@@ -103,4 +107,6 @@ Enter the directoty with:
 ```shell
 cd <name>
 ```
+### Done!
+[Return to the preparation steps](#prep)
 
