@@ -13,9 +13,9 @@ To follow this course you will need to take some steps first:
 
 ## Linux 
 
-In my tutorials I'll be using Ubuntu, so if you are not using some unix based OS (famous Windows) take these steps before we start, else, just continue.
+In my tutorials I'll be using Ubuntu, so if you are not using some unix based OS (basically if you're using Windows), you can have some troubles, take these steps before we start.
 
->**This tutorial can be followed here:** https://code.visualstudio.com/docs/remote/wsl-tutorial
+>**This can be followed here too:** https://code.visualstudio.com/docs/remote/wsl-tutorial
 
 ### Install Windows Subsystem for Linux <a name="linux"></a>
 
