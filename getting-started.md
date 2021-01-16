@@ -20,7 +20,7 @@ In my tutorials I'll be using Ubuntu, so if you are not using some unix based OS
 ### Install Windows Subsystem for Linux <a name="linux"></a>
 
  - In the windows bar type `features`
- - Give a check on `Windows Subsystem for Linux`
+ - Check `Windows Subsystem for Linux` option
  - Make sure it worked executing `wsl` in the command promt
  - The install Ubuntu in the `Microsoft Store`
  - After doing this, the `wsl` command should show you our precious Terminal
