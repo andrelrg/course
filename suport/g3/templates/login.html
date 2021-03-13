@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meuamigo</title>
+    <meta charset="utf-8"/>
+    <style>
+        body{
+            padding-left: 20%;
+            padding-right: 20%; 
+            background-color: rgb(90, 90, 90);
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+        }
+        nav{
+            display:flex;
+            justify-content: flex-end;
+            
+        }
+        nav a{
+            padding-left: 30px;
+            padding-top: 30px;
+            text-decoration: none;
+            color:black;
+        }
+
+        nav a:hover{
+            color:beige;
+        }
+
+        .login {
+            padding-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Site bacana</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">Sobre</a>
+        </nav>
+    </header>
+    <div class="login">
+        <form method="POST">
+            <div class="login-field">
+                <p>Username: </p>
+                <input type="text" name="username">
+            </div>
+            <div class="login-field">
+                <p>Password</p>
+                <input type="password" name="password">
+            </div>
+            <button type="submit">Vai</button>
+        </form>
+    </div>
+</body>
+</html>
