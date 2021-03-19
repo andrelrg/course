@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meuamigo</title>
+    <meta charset="utf-8"/>
+    <style>
+        body{
+            padding-left: 20%;
+            padding-right: 20%; 
+            background-color: rgb(90, 90, 90);
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+        }
+        nav{
+            display:flex;
+            justify-content: flex-end;
+            
+        }
+        nav a{
+            padding-left: 30px;
+            padding-top: 30px;
+            text-decoration: none;
+            color:black;
+        }
+
+        nav a:hover{
+            color:beige;
+        }
+
+        .index {
+            padding-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Site bacana</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">Sobre</a>
+        </nav>
+    </header>
+
+    <div class="index">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique mollis augue, id porttitor dolor elementum id. Quisque et magna condimentum, porta augue ut, bibendum dui. Duis a gravida ante. Praesent sed massa auctor, mollis enim ac, scelerisque neque. Sed accumsan iaculis lobortis. Nunc semper interdum tellus pretium imperdiet. Nulla scelerisque id tortor et facilisis. Proin porta diam id lacinia bibendum. Donec interdum metus purus, eu suscipit ex mattis id. Vivamus lectus eros, cursus vitae facilisis dapibus, lacinia eu tellus. Curabitur ullamcorper, leo non placerat porttitor, odio ipsum hendrerit dolor, eget varius nulla dui sit amet nunc. Curabitur ut urna non lacus gravida molestie feugiat non diam. Cras sit amet libero at nisl luctus rutrum.
+
+            Praesent commodo maximus nulla vitae vehicula. Mauris vehicula mattis nunc nec efficitur. Aenean ut bibendum augue. Integer sed eleifend erat, vitae rhoncus leo. Donec eget consequat libero, et sollicitudin sapien. Nulla facilisi. Curabitur vulputate magna eu elit fringilla ultrices. Morbi elit ante, auctor vel nisl tempus, iaculis finibus nisl. Praesent elementum, quam id ullamcorper efficitur, odio diam congue diam, ut accumsan erat odio at sapien.</p>
+        <img id="belone" src="{{ url_for('static', filename='/img/belone.PNG') }}" hidden>
+
+    </div>
+</body>
+
+<script type="text/javascript">
+    let clicks = 0;
+    document.getElementsByTagName('body')[0].onclick = () => {
+        clicks ++;
+        if (clicks == 5){
+            document.getElementById('belone').removeAttribute("hidden"); 
+        }
+    };
+</script>
+</html>

@@ -20,13 +20,13 @@ def login():
         username = request.form['username']
         password = request.form['password']
 
-        query = "SELECT username, password FROM users WHERE username = ? AND password = ?"
+        query = "SELECT username, password, github FROM users WHERE username = ? AND password = ?"
         sqlite = SQLite()
-        test = sqlite.select(query, [username, password])
+        result = sqlite.select(query, [username, password])
 
-        if test and (test['username'] == test['password'] == password):
-            return 'Sucesso'
-        return 'Não'
+        if result and (result[0]['username'] == username and result[0]['password'] == password):
+            return 'User ' + result[0]['github'] + ' connected sucessfully'
+        return 'Any user with this informations found'
 
 @app.route('/about')
 def about():
