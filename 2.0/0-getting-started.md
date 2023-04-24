@@ -3,10 +3,11 @@
 ## Preparation <a name="prep"></a>
 To follow this course you will need to take some steps first:
 1. Make sure you are using Linux [here](#linux)
-2. Link your github account to your Linux [here](#ssh)
-3. Create a repository in your github
-4. Config github in your terminal [here](#config)
-5. Clone the repository to your terminal [here](#repo)
+2. Install Git [here](#git)
+3. Link your github account to your Linux [here](#ssh)
+4. Create a repository in your github
+5. Config github in your terminal [here](#config)
+6. Clone the repository to your terminal [here](#repo)
 
 ---
 
@@ -44,6 +45,12 @@ sudo mount -t drvfs C: /mnt/c -o metadata
 ### Done!
 
 [Return to the preparation steps](#prep)
+
+---
+## Install git on WSL <a name="git"></a>
+```shell 
+sudo apt-get install git
+```
 
 ---
 
