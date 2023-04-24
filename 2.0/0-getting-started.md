@@ -2,12 +2,11 @@
 
 ## Preparation <a name="prep"></a>
 To follow this course you will need to take some steps first:
-1. Create your github account: https://github.com/
-2. Make sure you are using Linux [here](#linux)
-3. Link your github account to your Linux [here](#ssh)
-4. Create a repository in your github
-5. Config github in your terminal [here](#config)
-6. Clone the repository to your terminal [here](#repo)
+1. Make sure you are using Linux [here](#linux)
+2. Link your github account to your Linux [here](#ssh)
+3. Create a repository in your github
+4. Config github in your terminal [here](#config)
+5. Clone the repository to your terminal [here](#repo)
 
 ---
 
