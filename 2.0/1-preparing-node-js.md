@@ -1,18 +1,11 @@
-# Install NVM
-```
-ref: https://nodejs.dev/en/download/package-manager/#nvm
-```
-```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 
-nvm install 8
-
-nvm use 8
-```
 
 # Starting a Node application
 
+`If you dont have node installed, follow the istructions at the end of the file`
+
 $ npm init
+
 ```
 package name: (g1)
 version: (1.0.0)
@@ -50,4 +43,14 @@ app.listen(3000, () => {
 });
 ```
 
-## Create a 
+## Installing Node (via nvm)
+```
+ref: https://nodejs.dev/en/download/package-manager/#nvm
+```
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+
+nvm install 8
+
+nvm use 8
+```
