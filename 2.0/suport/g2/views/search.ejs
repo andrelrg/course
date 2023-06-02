@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resultados de Pesquisa - Google</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="/images/google_logo.png" alt="Google Logo" class="logo">
+      <div class="search-bar">
+        <form action="/search" method="get">
+          <input type="text" name="q" placeholder="Pesquisar" class="search-input">
+          <button type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="results-box">
+      <nav class="search-options">
+        <ul>
+          <li><a href="#">Todos</a></li>
+          <li><a href="#">Imagens</a></li>
+          <li><a href="#">Notícias</a></li>
+        </ul>
+      </nav>
+      <h1>Resultados de Pesquisa</h1>
+      <div class="search-results">
+        <% sites.forEach(function(site) { %>
+        <div class="search-result">
+          <h2><a href="<%= site.url %>"><%= site.title %></a></h2>
+          <p class="description"><%= site.description %></p>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+    
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href="#">Publicidade</a></li>
+      <li><a href="#">Negócios</a></li>
+      <li><a href="#">Sobre</a></li>
+    </ul>
+  </footer>
+</body>
+</html>

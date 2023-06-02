@@ -1,0 +1,170 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #202124;
+  color: #fff;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+}
+
+img {
+  max-width: 200px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4285f4;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+footer {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo {
+  width: 120px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.search-options ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.search-results li {
+  margin-bottom: 20px;
+}
+
+.search-results h2 {
+  margin-bottom: 5px;
+}
+
+.search-results .description {
+  font-size: 14px;
+  color: #666;
+}
+
+.search-input {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  margin-right: 10px;
+}
+
+.search-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+}
+
+body {
+  background-color: #1f1f1f;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #1f1f1f;
+}
+
+.search-bar {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.search-options {
+  background-color: #1f1f1f;
+  padding: 10px;
+}
+
+.search-options li {
+  margin-right: 10px;
+}
+
+.search-options li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main {
+  padding: 20px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.search-results {
+  list-style-type: none;
+  padding: 0;
+}
+
+.search-result {
+  margin-bottom: 20px;
+}
+
+.search-result h2 a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.search-result .description {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.results-box {
+  padding-left: 150px;
+}
