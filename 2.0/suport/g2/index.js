@@ -2,6 +2,8 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const sqlite3 = require('sqlite3').verbose();
+
 
 // EJS configuration
 app.set('views', path.join(__dirname, 'views'));
@@ -23,14 +25,9 @@ app.get('/', (req, res) => {
 app.get('/search', (req, res) => {
   const results = resultsMock();
   const searchTerm = req.query.q.toLowerCase();
-  let sites = [];
 
-  for (let i = 0; i < results.length; i++){
-    let title = results[i].title.toLocaleLowerCase();
-    if (title.includes(searchTerm)){
-        sites.push(results[i]);
-    }
-  }
+  let sites = executeQuery("select * from clothes where brand = '" + searchTerm + "'");
+
   res.render('search', { sites });
 });
 
@@ -39,6 +36,22 @@ app.get('/search', (req, res) => {
 app.listen(3000, () => {
   console.log('Server initialized on port 3000');
 });
+
+
+function executeQuery(query) {
+  const dbPath = './database/database.db';
+  const db = new sqlite3.Database(dbPath);
+
+  return new Promise((resolve, reject) => {
+    db.all(query, (err, rows) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(rows);
+      }
+    });
+  });
+}
 
 function resultsMock(){
     return [
